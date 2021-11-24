@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="author" content="Daniel Thomson" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/redditAPI.css" />
+    <title>REDDIT API</title>
+  </head>
+  <body>
+
+    <h1>REDDIT SEARCH GRAPH</h1>
+    <section class="search__form">
+      <label autocomplete="off">Key word:</label>
+      <input id="key__word" type="text" placeholder="Enter Key Word">
+      <label>From:</label>
+      <input id="search__from" type="date" placeholder="Search From...">
+      <label>To:</label>
+      <input id="search__to" type="date" placeholder="Search To...">
+      <input id="search__button" type="submit" value="Search">
+    </section>
+
+    <section class="chart__box">
+      <canvas class="myChart"></canvas>
+    </section>
+
+    <section class="search__results__container">
+      <ul class="search__results__list">
+
+      </ul>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="/js/redditAPI.js"></script>
+  </body>
+</html>
